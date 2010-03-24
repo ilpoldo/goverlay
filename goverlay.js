@@ -58,7 +58,10 @@ jQuery.goverlay = function (column, gutter, row, container) {
       if (event.which == 7 && event.shiftKey == true) {
         // The grid overlay is created only when it's called the first time
         if (!overlay) {
-          overlay = $("<div id=goverlay />").css("height", 0).css("float", "left");
+          overlay = $("<div id=goverlay />")
+            .css("height", 0)
+            .css("float", "left")
+            .css("overflow", "visible");
           container.prepend(overlay);
           paper = Raphael(overlay[0] , container.width(), container.height());
           Grid.render();

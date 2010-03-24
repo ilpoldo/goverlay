@@ -18,9 +18,10 @@ Make sure you have jquery and raphael and then load goverlay.js on your page:
 Usage (Ctrl + Shift + G)
 ------------------------
 Try it now! Open the console and load goverlay!
-
-    $('head').append($('<script/>').attr('src', 'raw/master/goverlay.js'))
     
+    jQuery.getScript('http://github.com/DmitryBaranovskiy/raphael/raw/master/raphael.js');
+    jQuery.getScript('goverlay/raw/master/goverlay.js');
+
 And now create a grid inside this github page
 
     jQuery.goverlay(30,10,18,$("#main :nth-child(2) > div"));
