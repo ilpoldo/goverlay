@@ -1,8 +1,12 @@
 Goverlay Go!
 ============
 
-Quick grid overlay for webpages that lets you change grid properties in a quick and painless way.
-No messing with the css.
+Quick grid overlay for webpages that does not require png.
+
+* Update according your grid properties changing a line of javascript.
+* Transparent overlay.
+* Toggle on and off.
+* No messing with the css
 
 
 Install
