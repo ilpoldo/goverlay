@@ -17,16 +17,17 @@ Make sure you have jquery and raphael and then load goverlay.js on your page:
     
 Usage (Ctrl + Shift + G)
 ------------------------
-Try it now! Open the console and load goverlay!
+Try it now! Open the console and load raphael and goverlay!
     
-    jQuery.getScript('http://github.com/DmitryBaranovskiy/raphael/raw/master/raphael.js');
-    jQuery.getScript('goverlay/raw/master/goverlay.js');
+    jQuery.getScript('http://github.com/DmitryBaranovskiy/raphael/raw/master/raphael.js', function(){jQuery.getScript('goverlay/raw/master/goverlay.js', function(){alert('now you can create the grid!')});});
 
-And now create a grid inside this github page
+Wait until the alert and now create a grid inside this github page:
 
-    jQuery.goverlay(30,10,18,$("#main :nth-child(2) > div"));
+    jQuery.goverlay(30,10,18,$('#main > div:nth-child(2)'));
 
-Create a grid with 30px columns and 10px gutters, and a 18px base line.
+Now use **Ctrl + Shift + G** to toggle the grid!
+
+On your page, to create a grid with 30px columns and 10px gutters, and a 18px base line.
     
     <script type="text/javascript" charset="utf-8">
     //<![CDATA[
